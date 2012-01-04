@@ -1,0 +1,92 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{95648333-114F-47C6-9494-70B9569F3891}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>GiftRAP.Tests</RootNamespace>
+    <AssemblyName>GiftRAP.Tests</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="nunit.framework">
+      <HintPath>..\tools\NUnit\nunit.framework.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ConcerningCoupons\WhenCouponAppliedToOrderDoesNotMatchProductInOrder.cs" />
+    <Compile Include="ConcerningCoupons\WhenCouponEndDateBeforeTheOrderDate.cs" />
+    <Compile Include="ConcerningCoupons\WhenCouponIsAppliedItemOnOrderInPreDiscountTaxState.cs" />
+    <Compile Include="ConcerningCoupons\WhenCouponIsAppliedItemOnOrderInStandardTaxState.cs" />
+    <Compile Include="ConcerningCoupons\WhenCouponStartDateAfterTheOrderDate.cs" />
+    <Compile Include="ConcerningSpecificStates\WhenOneLuxuryProductAtTenDollarsIsInOrderInFloridaWithTenPercentPromotion.cs" />
+    <Compile Include="ConcerningSpecificStates\WhenOneLuxuryProductAtTenDollarsIsInOrderInNevadaWithTenPercentPromotion.cs" />
+    <Compile Include="ConcerningSpecificStates\WhenOneLuxuryProductAtTenDollarsIsInOrderInNorthCarolinaWithTenPercentPromotion.cs" />
+    <Compile Include="ConcerningSpecificStates\WhenOneProductAtTenDollarsIsInOrderInFloridaWithTenPercentPromotion.cs" />
+    <Compile Include="ConcerningTaxes\WhenFixedAmountTaxesAppliedToOrderWithNoProductsInIt.cs" />
+    <Compile Include="ConcerningOrders\WhenSimpleStateTaxIsFivePointFivePercentOnATenDollarOrder.cs" />
+    <Compile Include="ConcerningOrders\WhenPromotionAppliedToOrderWithNoProductsInIt.cs" />
+    <Compile Include="ConcerningPromotions\WhenPromotionEndDateBeforeTheOrderDate.cs" />
+    <Compile Include="ConcerningPromotions\WhenPromotionIsAppliedItemOnOrderInStandardTaxState.cs" />
+    <Compile Include="ConcerningCoupons\WhenTenPercentCouponIsAppliedToTenDollarOrderInStateWithNoTaxes.cs" />
+    <Compile Include="ConcerningPromotions\WhenPromotionIsAppliedToItemOnOrderInPreDiscountTaxState.cs" />
+    <Compile Include="ConcerningPromotions\WhenPromotionStartDateAfterTheOrderDate.cs" />
+    <Compile Include="ConcerningPromotions\WhenTenPercentPromotionAndTwentyPercentCouponIsAppliedToTenDollarOrderInStateWithNoTaxes.cs" />
+    <Compile Include="ConcerningPromotions\WhenTenPercentPromotionIsAppliedToTenDollarOrderInStateWithNoTaxes.cs" />
+    <Compile Include="ConcerningTaxes\WhenOrderIsMillaryInStateWithNoTaxesForMillitary.cs" />
+    <Compile Include="ConcerningTaxes\WhenOrderIsNonMillaryInStateWithNoTaxesForMillitary.cs" />
+    <Compile Include="ConcerningOrders\WhenDiscountsExceedOneHundredPercentOnAProduct.cs" />
+    <Compile Include="ConcerningTaxes\WhenFlatStateTaxIsOneDollarOnATenDollarOrder.cs" />
+    <Compile Include="ConcerningOrders\WhenOrderHasNoProductsInIt.cs" />
+    <Compile Include="ConcerningOrders\WhenProductPricedAtTenDollarsIsAddedToOrderInStateWithNoTaxes.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TestExtensions.cs" />
+    <Compile Include="ConcerningTaxes\WhenOrderHasLuxuryProductPricedAtTenDollarsAndNonLuxuryProductPricedAtTenDollarsInStateWithLuxuryTaxAndTaxRateOfFivePercent.cs" />
+    <Compile Include="ConcerningTaxes\WhenTaxesCalculateToFractionOfPenny.cs" />
+    <Compile Include="ConcerningCoupons\WhenCouponIsValidForProductInOrderMultipleTimes.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Acme\Acme.csproj">
+      <Project>{C13C3D65-799C-4F44-95BA-A2C28446FC12}</Project>
+      <Name>GiftRAP</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

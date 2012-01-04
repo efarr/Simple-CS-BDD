@@ -1,0 +1,201 @@
+<h1 id="concerningcoupons">Concerning Coupons</h1>
+
+<h2 id="whencouponappliedtoorderdoesnotmatchproductinorder">When Coupon Applied To Order Does Not Match Product In Order</h2>
+
+<ul>
+<li>Should Not Apply Discount</li>
+</ul>
+
+<h2 id="whencouponenddatebeforetheorderdate">When Coupon End Date Before The Order Date</h2>
+
+<ul>
+<li>Should Not Apply Discount</li>
+</ul>
+
+<h2 id="whencouponisapplieditemonorderinstandardtaxstate">When Coupon Is Applied Item On Order In Standard Tax State</h2>
+
+<ul>
+<li>Should Calculate Tax On Discounted Price</li>
+</ul>
+
+<h2 id="whencouponisappliedtoitemonorderinprediscounttaxstate">When Coupon Is Applied To Item On Order In Pre Discount Tax State</h2>
+
+<ul>
+<li>Should Calculate Tax On Full Price</li>
+</ul>
+
+<h2 id="whencouponisvalidforproductinordermultipletimes">When Coupon Is Valid For Product In Order Multiple Times</h2>
+
+<ul>
+<li>Should Apply Discount To Entire Quantity Of Discounted Product</li>
+</ul>
+
+<h2 id="whencouponstartdateaftertheorderdate">When Coupon Start Date After The Order Date</h2>
+
+<ul>
+<li>Should Not Apply Discount</li>
+</ul>
+
+<h2 id="whentenpercentcouponisappliedtotendollarorderinstatewithnotaxes">When Ten Percent Coupon Is Applied To Ten Dollar Order In State With No Taxes</h2>
+
+<ul>
+<li>Should Total Order To Nine Dollars</li>
+</ul>
+
+<h1 id="concerningorders">Concerning Orders</h1>
+
+<h2 id="whendiscountsexceedonehundredpercentonaproduct">When Discounts Exceed One Hundred Percent On A Product</h2>
+
+<ul>
+<li>Should Price Product At Zero Dollars</li>
+</ul>
+
+<h2 id="whenorderhasnoproductsinit">When Order Has No Products In It</h2>
+
+<ul>
+<li>Should Total To Zero Dollars</li>
+</ul>
+
+<h2 id="whenproductpricedattendollarsisaddedtoorderinstatewithnotaxes">When Product Priced At Ten Dollars Is Added To Order In State With No Taxes</h2>
+
+<ul>
+<li>Should Total To Ten Dollars</li>
+<li>Should Pre Tax Total To Ten Dollars</li>
+<li>Should Have Zero Tax</li>
+</ul>
+
+<h2 id="whenpromotionappliedtoorderwithnoproductsinit">When Promotion Applied To Order With No Products In It</h2>
+
+<ul>
+<li>Should Total To Zero Dollars</li>
+</ul>
+
+<h2 id="whensimplestatetaxisfivepointfivepercentonatendollarorder">When Simple State Tax Is Five Point Five Percent On A Ten Dollar Order</h2>
+
+<ul>
+<li>Should Total To Ten Dollars And Fifty Five Cents</li>
+<li>Should Pre Tax Total To Ten Dollars</li>
+<li>Should Have Fifty Five Cents Tax</li>
+</ul>
+
+<h1 id="concerningpromotions">Concerning Promotions</h1>
+
+<h2 id="whenpromotionenddatebeforetheorderdate">When Promotion End Date Before The Order Date</h2>
+
+<ul>
+<li>Should Not Apply Discount</li>
+</ul>
+
+<h2 id="whenpromotionisapplieditemonorderinstandardtaxstate">When Promotion Is Applied Item On Order In Standard Tax State</h2>
+
+<ul>
+<li>Should Calculate Tax On Discounted Price</li>
+</ul>
+
+<h2 id="whenpromotionisappliedtoitemonorderinprediscounttaxstate">When Promotion Is Applied To Item On Order In Pre Discount Tax State</h2>
+
+<ul>
+<li>Should Calculate Tax On Full Price</li>
+</ul>
+
+<h2 id="whenpromotionstartdateaftertheorderdate">When Promotion Start Date After The Order Date</h2>
+
+<ul>
+<li>Should Not Apply Discount</li>
+</ul>
+
+<h2 id="whentenpercentpromotionandtwentypercentcouponisappliedtotendollarorderinstatewithnotaxes">When Ten Percent Promotion And Twenty Percent Coupon Is Applied To Ten Dollar Order In State With No Taxes</h2>
+
+<ul>
+<li>Should Total Order To Seven Dollars</li>
+</ul>
+
+<h2 id="whentenpercentpromotionisappliedtotendollarorderinstatewithnotaxes">When Ten Percent Promotion Is Applied To Ten Dollar Order In State With No Taxes</h2>
+
+<ul>
+<li>Should Total Order To Nine Dollars</li>
+<li>Should Pre Tax Total Order To Nine Dollars</li>
+</ul>
+
+<h1 id="concerningspecificstates">Concerning Specific States</h1>
+
+<h2 id="whenoneluxuryproductattendollarsisinorderinfloridawithtenpercentpromotion">When One Luxury Product At Ten Dollars Is In Order In Florida With Ten Percent Promotion</h2>
+
+<ul>
+<li>Should Total To Ten Dollars</li>
+<li>Should Pre Tax Total To Nine Dollars</li>
+<li>Should Have Taxes Of One Dollar</li>
+</ul>
+
+<h2 id="whenoneluxuryproductattendollarsisinorderinnevadawithtenpercentpromotion">When One Luxury Product At Ten Dollars Is In Order In Nevada With Ten Percent Promotion</h2>
+
+<ul>
+<li>Should Total To Nine Seventy</li>
+<li>Should Pre Tax Total To Nine Dollars</li>
+<li>Should Have Taxes Of Seventy Cents</li>
+</ul>
+
+<h2 id="whenoneluxuryproductattendollarsisinorderinnorthcarolinawithtenpercentpromotion">When One Luxury Product At Ten Dollars Is In Order In North Carolina With Ten Percent Promotion</h2>
+
+<ul>
+<li>Should Total To Nine Dollars And Ninety Cents</li>
+<li>Should Pre Tax Total To Nine Dollars</li>
+<li>Should Have Taxes Of Ninety Cents</li>
+</ul>
+
+<h2 id="whenoneproductattendollarsisinorderinfloridawithtenpercentpromotion">When One Product At Ten Dollars Is In Order In Florida With Ten Percent Promotion</h2>
+
+<ul>
+<li>Should Total To Nine Dollars And Fifty Cents</li>
+<li>Should Pre Tax Total To Nine Dollars</li>
+<li>Should Have Taxes Of Fifty Cents</li>
+</ul>
+
+<h1 id="concerningtaxes">Concerning Taxes</h1>
+
+<h2 id="whenfixedamounttaxesappliedtoorderwithnoproductsinit">When Fixed Amount Taxes Applied To Order With No Products In It</h2>
+
+<ul>
+<li>Should Total To Zero Dollars</li>
+</ul>
+
+<h2 id="whenflatstatetaxisonedollaronatendollarorder">When Flat State Tax Is One Dollar On A Ten Dollar Order</h2>
+
+<ul>
+<li>Should Calculate Tax At One Dollar</li>
+<li>Should Calculate Order Total At Eleven Dollars</li>
+<li>Should Calculate Pre Tax Total At Ten Dollars</li>
+</ul>
+
+<h2 id="whenorderhasluxuryproductpricedattendollarsandnonluxuryproductpricedattendollarsinstatewithluxurytaxandtaxrateoffivepercent">When Order Has Luxury Product Priced At Ten Dollars And Non Luxury Product Priced At Ten Dollars In State With Luxury Tax And Tax Rate Of Five Percent</h2>
+
+<ul>
+<li>Should Have Taxes Of One Dollar And Fifty Cents</li>
+<li>Should Calculate Total At Twenty One Fifty</li>
+<li>Should Calculate Pre Tax Total At Twenty Dollars</li>
+</ul>
+
+<h2 id="whenorderismillaryinstatewithnotaxesformillitary">When Order Is Millary In State With No Taxes For Millitary</h2>
+
+<ul>
+<li>Should Charge No Taxes</li>
+</ul>
+
+<h2 id="whenorderisnonmillaryinstatewithnotaxesformillitary">When Order Is Non Millary In State With No Taxes For Millitary</h2>
+
+<ul>
+<li>Should Charge Taxes</li>
+</ul>
+
+<h2 id="whentaxescalculatetofractionofpenny">When Taxes Calculate To Fraction Of Penny</h2>
+
+<ul>
+<li>Should Be Rounded To Nearest Penny</li>
+</ul>
+
+<style type="text/css">
+body { font-family: Arial, Helvetica, Sans-serif; font-size: 10pt; padding: 2em; }
+th, td { margin-right: 12px; padding-right: 12px; }
+dt { font-weight: bold; float: left; clear: left; width: 16em; background-color: #eee; padding: 3px 6px 3px 6px; margin-right: 6px; text-align: right; }
+dd { padding: 3px; }
+</style>

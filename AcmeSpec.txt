@@ -1,0 +1,117 @@
+# Concerning Coupons
+## When Coupon Applied To Order Does Not Match Product In Order
+* Should Not Apply Discount
+
+## When Coupon End Date Before The Order Date
+* Should Not Apply Discount
+
+## When Coupon Is Applied Item On Order In Standard Tax State
+* Should Calculate Tax On Discounted Price
+
+## When Coupon Is Applied To Item On Order In Pre Discount Tax State
+* Should Calculate Tax On Full Price
+
+## When Coupon Is Valid For Product In Order Multiple Times
+* Should Apply Discount To Entire Quantity Of Discounted Product
+
+## When Coupon Start Date After The Order Date
+* Should Not Apply Discount
+
+## When Ten Percent Coupon Is Applied To Ten Dollar Order In State With No Taxes
+* Should Total Order To Nine Dollars
+
+
+# Concerning Orders
+## When Discounts Exceed One Hundred Percent On A Product
+* Should Price Product At Zero Dollars
+
+## When Order Has No Products In It
+* Should Total To Zero Dollars
+
+## When Product Priced At Ten Dollars Is Added To Order In State With No Taxes
+* Should Total To Ten Dollars
+* Should Pre Tax Total To Ten Dollars
+* Should Have Zero Tax
+
+## When Promotion Applied To Order With No Products In It
+* Should Total To Zero Dollars
+
+## When Simple State Tax Is Five Point Five Percent On A Ten Dollar Order
+* Should Total To Ten Dollars And Fifty Five Cents
+* Should Pre Tax Total To Ten Dollars
+* Should Have Fifty Five Cents Tax
+
+
+# Concerning Promotions
+## When Promotion End Date Before The Order Date
+* Should Not Apply Discount
+
+## When Promotion Is Applied Item On Order In Standard Tax State
+* Should Calculate Tax On Discounted Price
+
+## When Promotion Is Applied To Item On Order In Pre Discount Tax State
+* Should Calculate Tax On Full Price
+
+## When Promotion Start Date After The Order Date
+* Should Not Apply Discount
+
+## When Ten Percent Promotion And Twenty Percent Coupon Is Applied To Ten Dollar Order In State With No Taxes
+* Should Total Order To Seven Dollars
+
+## When Ten Percent Promotion Is Applied To Ten Dollar Order In State With No Taxes
+* Should Total Order To Nine Dollars
+* Should Pre Tax Total Order To Nine Dollars
+
+
+# Concerning Specific States
+## When One Luxury Product At Ten Dollars Is In Order In Florida With Ten Percent Promotion
+* Should Total To Ten Dollars
+* Should Pre Tax Total To Nine Dollars
+* Should Have Taxes Of One Dollar
+
+## When One Luxury Product At Ten Dollars Is In Order In Nevada With Ten Percent Promotion
+* Should Total To Nine Seventy
+* Should Pre Tax Total To Nine Dollars
+* Should Have Taxes Of Seventy Cents
+
+## When One Luxury Product At Ten Dollars Is In Order In North Carolina With Ten Percent Promotion
+* Should Total To Nine Dollars And Ninety Cents
+* Should Pre Tax Total To Nine Dollars
+* Should Have Taxes Of Ninety Cents
+
+## When One Product At Ten Dollars Is In Order In Florida With Ten Percent Promotion
+* Should Total To Nine Dollars And Fifty Cents
+* Should Pre Tax Total To Nine Dollars
+* Should Have Taxes Of Fifty Cents
+
+
+# Concerning Taxes
+## When Fixed Amount Taxes Applied To Order With No Products In It
+* Should Total To Zero Dollars
+
+## When Flat State Tax Is One Dollar On A Ten Dollar Order
+* Should Calculate Tax At One Dollar
+* Should Calculate Order Total At Eleven Dollars
+* Should Calculate Pre Tax Total At Ten Dollars
+
+## When Order Has Luxury Product Priced At Ten Dollars And Non Luxury Product Priced At Ten Dollars In State With Luxury Tax And Tax Rate Of Five Percent
+* Should Have Taxes Of One Dollar And Fifty Cents
+* Should Calculate Total At Twenty One Fifty
+* Should Calculate Pre Tax Total At Twenty Dollars
+
+## When Order Is Millary In State With No Taxes For Millitary
+* Should Charge No Taxes
+
+## When Order Is Non Millary In State With No Taxes For Millitary
+* Should Charge Taxes
+
+## When Taxes Calculate To Fraction Of Penny
+* Should Be Rounded To Nearest Penny
+
+
+<style type="text/css">
+body { font-family: Arial, Helvetica, Sans-serif; font-size: 10pt; padding: 2em; }
+th, td { margin-right: 12px; padding-right: 12px; }
+dt { font-weight: bold; float: left; clear: left; width: 16em; background-color: #eee; padding: 3px 6px 3px 6px; margin-right: 6px; text-align: right; }
+dd { padding: 3px; }
+</style>
