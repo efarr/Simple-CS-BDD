@@ -1,6 +1,6 @@
 ﻿using NUnit.Framework;
 
-namespace GiftRAP.Tests.ConcerningOrders
+namespace Acme.Tests.ConcerningOrders
 {
 	[TestFixture]
 	public class When_simple_state_tax_is_five_point_five_percent_on_a_ten_dollar_order

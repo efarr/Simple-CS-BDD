@@ -1,9 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using GiftRAP.Taxes;
+using Acme.Taxes;
 
-namespace GiftRAP
+namespace Acme
 {
 	public static class StateOf
 	{

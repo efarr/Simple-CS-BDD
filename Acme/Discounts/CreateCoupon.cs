@@ -1,7 +1,7 @@
 ﻿using System;
-using GiftRAP.Discounts;
+using Acme.Discounts;
 
-namespace GiftRAP
+namespace Acme
 {
 	public static class CreateCoupon
 	{

@@ -1,8 +1,8 @@
 ﻿using System;
-using GiftRAP.Discounts;
-using GiftRAP.Taxes;
+using Acme.Discounts;
+using Acme.Taxes;
 
-namespace GiftRAP
+namespace Acme
 {
 	public static class CreateOrder
 	{

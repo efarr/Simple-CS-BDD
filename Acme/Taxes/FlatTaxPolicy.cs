@@ -1,6 +1,6 @@
 ﻿using System.Linq;
 
-namespace GiftRAP.Taxes
+namespace Acme.Taxes
 {
 	public class FlatTaxPolicy : TaxPolicy
 	{

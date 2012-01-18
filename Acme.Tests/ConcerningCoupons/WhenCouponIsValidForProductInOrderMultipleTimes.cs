@@ -1,7 +1,7 @@
-﻿using GiftRAP.Discounts;
+﻿using Acme.Discounts;
 using NUnit.Framework;
 
-namespace GiftRAP.Tests.ConcerningCoupons
+namespace Acme.Tests.ConcerningCoupons
 {
 	[TestFixture]
 	public class When_coupon_is_valid_for_product_in_order_multiple_times

@@ -1,4 +1,4 @@
-﻿namespace GiftRAP.Taxes
+﻿namespace Acme.Taxes
 {
 	public interface ITaxPolicy
 	{

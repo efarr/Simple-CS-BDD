@@ -1,9 +1,9 @@
 ﻿using NUnit.Framework;
 
-namespace GiftRAP.Tests.ConcerningTaxes
+namespace Acme.Tests.ConcerningTaxes
 {
 	[TestFixture]
-	public class WhenFixedAmountTaxesAppliedToOrderWithNoProductsInIt
+    public class When_fixed_amount_taxes_applied_to_order_with_no_products_in_it
 	{
 		private Order _order;
 		[TestFixtureSetUp] public void Context()
@@ -11,7 +11,7 @@ namespace GiftRAP.Tests.ConcerningTaxes
 			_order = CreateOrder.Of().Apply(CreatePromotion.WithDiscountOf(.1m)).In(StateOf.AR);
 		}
 
-		[Test] public void ShouldTotalToZeroDollars()
+		[Test] public void Should_total_to_zero_dollars()
 		{
 			_order.Total.ShouldEqual(0m);
 		}

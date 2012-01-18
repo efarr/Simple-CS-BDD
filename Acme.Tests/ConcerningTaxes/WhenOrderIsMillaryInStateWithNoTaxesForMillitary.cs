@@ -1,9 +1,9 @@
 ﻿using NUnit.Framework;
 
-namespace GiftRAP.Tests.ConcerningTaxes
+namespace Acme.Tests.ConcerningTaxes
 {
 	[TestFixture]
-	public class WhenOrderIsMillaryInStateWithNoTaxesForMillitary
+	public class When_order_is_millary_in_state_with_no_taxes_for_millitary
 	{
 		private Order _order;
 		[TestFixtureSetUp] public void Context()
@@ -11,7 +11,7 @@ namespace GiftRAP.Tests.ConcerningTaxes
 			_order = CreateOrder.Of(new Product(10)).ByMillitaryMember().In(StateOf.CA);
 		}
 
-		[Test] public void ShouldChargeNoTaxes()
+		[Test] public void Should_charge_no_taxes()
 		{
 			_order.Tax.ShouldEqual(0m);
 		}

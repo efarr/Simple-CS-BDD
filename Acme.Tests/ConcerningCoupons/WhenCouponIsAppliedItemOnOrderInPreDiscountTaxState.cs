@@ -1,7 +1,7 @@
-﻿using GiftRAP.Discounts;
+﻿using Acme.Discounts;
 using NUnit.Framework;
 
-namespace GiftRAP.Tests.ConcerningCoupons
+namespace Acme.Tests.ConcerningCoupons
 {
 	[TestFixture]
 	public class When_coupon_is_applied_to_item_on_order_in_prediscount_tax_state

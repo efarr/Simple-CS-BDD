@@ -1,6 +1,6 @@
 ﻿using NUnit.Framework;
 
-namespace GiftRAP.Tests.ConcerningOrders
+namespace Acme.Tests.ConcerningOrders
 {
 	[TestFixture]
 	public class When_order_has_no_products_in_it

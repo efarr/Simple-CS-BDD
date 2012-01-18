@@ -1,6 +1,6 @@
 ﻿using NUnit.Framework;
 
-namespace GiftRAP.Tests.ConcerningTaxes
+namespace Acme.Tests.ConcerningTaxes
 {
 	[TestFixture] 
 	public class When_taxes_calculate_to_fraction_of_penny

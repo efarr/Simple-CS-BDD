@@ -8,8 +8,8 @@
     <ProjectGuid>{95648333-114F-47C6-9494-70B9569F3891}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>GiftRAP.Tests</RootNamespace>
-    <AssemblyName>GiftRAP.Tests</AssemblyName>
+    <RootNamespace>Acme.Tests</RootNamespace>
+    <AssemblyName>Acme.Tests</AssemblyName>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>

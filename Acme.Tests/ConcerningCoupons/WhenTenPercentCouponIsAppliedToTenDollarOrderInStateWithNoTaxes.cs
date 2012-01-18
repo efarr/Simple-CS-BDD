@@ -1,7 +1,7 @@
-﻿using GiftRAP.Discounts;
+﻿using Acme.Discounts;
 using NUnit.Framework;
 
-namespace GiftRAP.Tests.ConcerningCoupons
+namespace Acme.Tests.ConcerningCoupons
 {
 	[TestFixture]
 	public class When_ten_percent_coupon_is_applied_to_ten_dollar_order_in_state_with_no_taxes

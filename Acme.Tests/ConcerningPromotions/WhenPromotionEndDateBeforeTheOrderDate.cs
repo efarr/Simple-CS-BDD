@@ -1,11 +1,11 @@
 ﻿using System;
-using GiftRAP.Discounts;
+using Acme.Discounts;
 using NUnit.Framework;
 
-namespace GiftRAP.Tests.ConcerningPromotions
+namespace Acme.Tests.ConcerningPromotions
 {
 	[TestFixture]
-	public class WhenPromotionEndDateBeforeTheOrderDate
+	public class When_promotion_end_date_before_the_order_date
 	{
 		private Order _order;
 		[TestFixtureSetUp] public void Context()
@@ -15,7 +15,7 @@ namespace GiftRAP.Tests.ConcerningPromotions
 			_order = CreateOrder.Of(product).On(DateTime.Now).Apply(promotion).In(StateOf.UT);
 		}
 
-		[Test] public void ShouldNotApplyDiscount()
+		[Test] public void Should_not_apply_discount()
 		{
 			_order.Total.ShouldEqual(10m);
 		}

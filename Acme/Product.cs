@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace GiftRAP
+namespace Acme
 {
 	public class Product
 	{

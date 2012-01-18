@@ -1,6 +1,6 @@
 ﻿using NUnit.Framework;
 
-namespace GiftRAP.Tests.ConcerningOrders
+namespace Acme.Tests.ConcerningOrders
 {
 	[TestFixture]
 	public class When_product_priced_at_ten_dollars_is_added_to_order_in_state_with_no_taxes

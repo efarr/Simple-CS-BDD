@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace GiftRAP.Discounts
+namespace Acme.Discounts
 {
 	public abstract class DatedDiscount
 	{

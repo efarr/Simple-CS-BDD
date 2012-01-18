@@ -1,4 +1,4 @@
-﻿namespace GiftRAP
+﻿namespace Acme
 {
 	/// <summary>
 	/// Ensures that we don't return fractions of pennies.

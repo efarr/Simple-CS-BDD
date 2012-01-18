@@ -1,6 +1,6 @@
 ﻿using NUnit.Framework;
 
-namespace GiftRAP.Tests.ConcerningTaxes
+namespace Acme.Tests.ConcerningTaxes
 {
 	[TestFixture]
 	public class When_order_is_nonmillary_in_state_with_no_taxes_for_millitary

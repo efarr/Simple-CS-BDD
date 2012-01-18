@@ -1,4 +1,4 @@
-﻿namespace GiftRAP.Discounts
+﻿namespace Acme.Discounts
 {
 	public class Promotion : DatedDiscount
 	{

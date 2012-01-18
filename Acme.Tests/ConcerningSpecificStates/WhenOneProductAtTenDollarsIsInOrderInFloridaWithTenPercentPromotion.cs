@@ -1,6 +1,6 @@
 ﻿using NUnit.Framework;
 
-namespace GiftRAP.Tests.ConcerningSpecificStates
+namespace Acme.Tests.ConcerningSpecificStates
 {
 	[TestFixture]
 	public class WhenOneProductAtTenDollarsIsInOrderInFloridaWithTenPercentPromotion

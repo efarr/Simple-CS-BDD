@@ -1,6 +1,6 @@
-﻿using GiftRAP.Discounts;
+﻿using Acme.Discounts;
 
-namespace GiftRAP
+namespace Acme
 {
 	public static class CreatePromotion
 	{

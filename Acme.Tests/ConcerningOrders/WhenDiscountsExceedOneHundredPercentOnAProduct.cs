@@ -1,8 +1,8 @@
 ﻿using System;
-using GiftRAP.Discounts;
+using Acme.Discounts;
 using NUnit.Framework;
 
-namespace GiftRAP.Tests.ConcerningOrders
+namespace Acme.Tests.ConcerningOrders
 {
 	[TestFixture]
 	public class When_discounts_exceed_one_hundred_percent_on_a_product

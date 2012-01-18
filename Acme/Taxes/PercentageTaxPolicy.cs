@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace GiftRAP.Taxes
+namespace Acme.Taxes
 {
 	internal class PercentageTaxPolicy : TaxPolicy
 	{

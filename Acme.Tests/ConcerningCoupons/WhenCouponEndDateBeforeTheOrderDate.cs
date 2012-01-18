@@ -1,8 +1,8 @@
 ﻿using System;
-using GiftRAP.Discounts;
+using Acme.Discounts;
 using NUnit.Framework;
 
-namespace GiftRAP.Tests.ConcerningCoupons
+namespace Acme.Tests.ConcerningCoupons
 {
 	[TestFixture]
 	public class When_coupon_end_date_before_the_order_date

@@ -1,9 +1,9 @@
 ﻿using NUnit.Framework;
 
-namespace GiftRAP.Tests.ConcerningSpecificStates
+namespace Acme.Tests.ConcerningSpecificStates
 {
 	[TestFixture]
-	public class WhenOneLuxuryProductAtTenDollarsIsInOrderInFloridaWithTenPercentPromotion
+	public class When_one_luxury_product_at_ten_dollars_is_in_order_in_Florida_with_ten_percent_promotion
 	{
 		private Order _order;
 		[TestFixtureSetUp]
@@ -13,19 +13,19 @@ namespace GiftRAP.Tests.ConcerningSpecificStates
 		}
 
 		[Test]
-		public void ShouldTotalToTenDollars()
+		public void Should_total_to_ten_dollars()
 		{
 			_order.Total.ShouldEqual(10m);
 		}
 
 		[Test]
-		public void ShouldPreTaxTotalToNineDollars()
+		public void Should_pretax_total_to_nine_dollars()
 		{
 			_order.PreTaxTotal.ShouldEqual(9m);
 		}
 
 		[Test]
-		public void ShouldHaveTaxesOfOneDollar()
+		public void Should_have_taxes_of_one_dollar()
 		{
 			_order.Tax.ShouldEqual(1m);
 		}

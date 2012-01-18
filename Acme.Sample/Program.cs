@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace GiftRAP.Sample
+namespace Acme.Sample
 {
 	/// <summary>
 	/// Just enough to give you the idea

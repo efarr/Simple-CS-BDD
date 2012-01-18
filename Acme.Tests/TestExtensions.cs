@@ -5,7 +5,7 @@ using System.Text.RegularExpressions;
 using NUnit.Framework;
 
 // Pulled this file in from previous projects. Just provides a more fluent way to assert.
-namespace GiftRAP.Tests
+namespace Acme.Tests
 {
 	public static class TestExtensions
 	{
