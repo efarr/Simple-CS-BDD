@@ -9,9 +9,12 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Acme.Sample", "Acme.Sample\
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{ABC67203-D6A8-48D4-8BC0-E5EA5C94C626}"
 	ProjectSection(SolutionItems) = preProject
+		Acme Developer Test.docx = Acme Developer Test.docx
 		AcmeSpec.html = AcmeSpec.html
 		AcmeSpec.txt = AcmeSpec.txt
 	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestReportGenerator", "TestReportGenerator\TestReportGenerator.csproj", "{88C176BF-2F9D-4F15-AE00-3C5E2F04A4E0}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -53,6 +56,16 @@ Global
 		{8F83B9EF-B056-4F7D-8283-1C2DE910A776}.Release|Mixed Platforms.Build.0 = Release|x86
 		{8F83B9EF-B056-4F7D-8283-1C2DE910A776}.Release|x86.ActiveCfg = Release|x86
 		{8F83B9EF-B056-4F7D-8283-1C2DE910A776}.Release|x86.Build.0 = Release|x86
+		{88C176BF-2F9D-4F15-AE00-3C5E2F04A4E0}.Debug|Any CPU.ActiveCfg = Debug|x86
+		{88C176BF-2F9D-4F15-AE00-3C5E2F04A4E0}.Debug|Mixed Platforms.ActiveCfg = Debug|x86
+		{88C176BF-2F9D-4F15-AE00-3C5E2F04A4E0}.Debug|Mixed Platforms.Build.0 = Debug|x86
+		{88C176BF-2F9D-4F15-AE00-3C5E2F04A4E0}.Debug|x86.ActiveCfg = Debug|x86
+		{88C176BF-2F9D-4F15-AE00-3C5E2F04A4E0}.Debug|x86.Build.0 = Debug|x86
+		{88C176BF-2F9D-4F15-AE00-3C5E2F04A4E0}.Release|Any CPU.ActiveCfg = Release|x86
+		{88C176BF-2F9D-4F15-AE00-3C5E2F04A4E0}.Release|Mixed Platforms.ActiveCfg = Release|x86
+		{88C176BF-2F9D-4F15-AE00-3C5E2F04A4E0}.Release|Mixed Platforms.Build.0 = Release|x86
+		{88C176BF-2F9D-4F15-AE00-3C5E2F04A4E0}.Release|x86.ActiveCfg = Release|x86
+		{88C176BF-2F9D-4F15-AE00-3C5E2F04A4E0}.Release|x86.Build.0 = Release|x86
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

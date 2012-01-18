@@ -1,116 +1,116 @@
 # Concerning Coupons
-## When Coupon Applied To Order Does Not Match Product In Order
-* Should Not Apply Discount
+## When coupon applied to order does not match product in order
+* Should not apply discount
 
-## When Coupon End Date Before The Order Date
-* Should Not Apply Discount
+## When coupon end date before the order date
+* Should not apply discount
 
-## When Coupon Is Applied Item On Order In Standard Tax State
-* Should Calculate Tax On Discounted Price
+## When coupon is applied to item on order in prediscount tax state
+* Should calculate tax on full price
 
-## When Coupon Is Applied To Item On Order In Pre Discount Tax State
-* Should Calculate Tax On Full Price
+## When coupon is applied to item on order in standard tax state
+* Should calculate tax on discounted price
 
-## When Coupon Is Valid For Product In Order Multiple Times
-* Should Apply Discount To Entire Quantity Of Discounted Product
+## When coupon is valid for product in order multiple times
+* Should apply discount to entire quantity of discounted product
 
-## When Coupon Start Date After The Order Date
-* Should Not Apply Discount
+## When coupon start date after the order date
+* Should not apply discount
 
-## When Ten Percent Coupon Is Applied To Ten Dollar Order In State With No Taxes
-* Should Total Order To Nine Dollars
+## When ten percent coupon is applied to ten dollar order in state with no taxes
+* Should total order to nine dollars
 
 
 # Concerning Orders
-## When Discounts Exceed One Hundred Percent On A Product
-* Should Price Product At Zero Dollars
+## When discounts exceed one hundred percent on a product
+* Should price product at zero dollars
 
-## When Order Has No Products In It
-* Should Total To Zero Dollars
+## When order has no products in it
+* Should total to zero dollars
 
-## When Product Priced At Ten Dollars Is Added To Order In State With No Taxes
-* Should Total To Ten Dollars
-* Should Pre Tax Total To Ten Dollars
-* Should Have Zero Tax
+## When product priced at ten dollars is added to order in state with no taxes
+* Should total to ten dollars
+* Should pretax total to ten dollars
+* Should have zero tax
 
-## When Promotion Applied To Order With No Products In It
-* Should Total To Zero Dollars
+## When promotion applied to order with no products in it
+* Should total to zero dollars
 
-## When Simple State Tax Is Five Point Five Percent On A Ten Dollar Order
-* Should Total To Ten Dollars And Fifty Five Cents
-* Should Pre Tax Total To Ten Dollars
-* Should Have Fifty Five Cents Tax
+## When simple state tax is five point five percent on a ten dollar order
+* Should total to ten dollars and fifty five cents
+* Should pretax total to ten dollars
+* Should have fifty five cents tax
 
 
 # Concerning Promotions
-## When Promotion End Date Before The Order Date
-* Should Not Apply Discount
+## When promotion end date before the order date
+* Should not apply discount
 
-## When Promotion Is Applied Item On Order In Standard Tax State
-* Should Calculate Tax On Discounted Price
+## When promotion is applied item on order in standard tax state
+* Should calculate tax on discounted price
 
-## When Promotion Is Applied To Item On Order In Pre Discount Tax State
-* Should Calculate Tax On Full Price
+## When promotion is applied to item on order in prediscount tax state
+* Should calculate tax on full price
 
-## When Promotion Start Date After The Order Date
-* Should Not Apply Discount
+## When promotion start date after the order date
+* Should not apply discount
 
-## When Ten Percent Promotion And Twenty Percent Coupon Is Applied To Ten Dollar Order In State With No Taxes
-* Should Total Order To Seven Dollars
+## When ten percent promotion and twenty percent coupon is applied to ten dollar order in state with no taxes
+* Should total order to seven dollars
 
-## When Ten Percent Promotion Is Applied To Ten Dollar Order In State With No Taxes
-* Should Total Order To Nine Dollars
-* Should Pre Tax Total Order To Nine Dollars
+## When ten percent promotion is applied to ten dollar order in state with no taxes
+* Should total order to nine dollars
+* Should pretax total order to nine dollars
 
 
 # Concerning Specific States
-## When One Luxury Product At Ten Dollars Is In Order In Florida With Ten Percent Promotion
-* Should Total To Ten Dollars
-* Should Pre Tax Total To Nine Dollars
-* Should Have Taxes Of One Dollar
+## When one luxury product at ten dollars is in order in Florida with ten percent promotion
+* Should total to ten dollars
+* Should pretax total to nine dollars
+* Should have taxes of one dollar
 
-## When One Luxury Product At Ten Dollars Is In Order In Nevada With Ten Percent Promotion
-* Should Total To Nine Seventy
-* Should Pre Tax Total To Nine Dollars
-* Should Have Taxes Of Seventy Cents
+## When one luxury product at ten dollars is in order in Nevada with ten percent promotion
+* Should total to nine seventy
+* Should pretax total to nine dollars
+* Should have taxes of seventy cents
 
-## When One Luxury Product At Ten Dollars Is In Order In North Carolina With Ten Percent Promotion
-* Should Total To Nine Dollars And Ninety Cents
-* Should Pre Tax Total To Nine Dollars
-* Should Have Taxes Of Ninety Cents
+## When one luxury product at ten dollars is in order in North Carolina with ten percent promotion
+* Should total to nine dollars and ninety cents
+* Should pretax total to nine dollars
+* Should have taxes of ninety cents
 
-## When One Product At Ten Dollars Is In Order In Florida With Ten Percent Promotion
-* Should Total To Nine Dollars And Fifty Cents
-* Should Pre Tax Total To Nine Dollars
-* Should Have Taxes Of Fifty Cents
+## WhenOneProductAtTenDollarsIsInOrderInFloridaWithTenPercentPromotion
+* ShouldTotalToNineDollarsAndFiftyCents
+* ShouldPreTaxTotalToNineDollars
+* ShouldHaveTaxesOfFiftyCents
 
 
 # Concerning Taxes
-## When Fixed Amount Taxes Applied To Order With No Products In It
-* Should Total To Zero Dollars
+## When fixed amount taxes applied to order with no products in it
+* Should total to zero dollars
 
-## When Flat State Tax Is One Dollar On A Ten Dollar Order
-* Should Calculate Tax At One Dollar
-* Should Calculate Order Total At Eleven Dollars
-* Should Calculate Pre Tax Total At Ten Dollars
+## When flat state tax is one dollar on a ten dollar order
+* Should calculate tax at one dollar
+* Should calculate order total at eleven dollars
+* Should calculate pretax total at ten dollars
 
-## When Order Has Luxury Product Priced At Ten Dollars And Non Luxury Product Priced At Ten Dollars In State With Luxury Tax And Tax Rate Of Five Percent
-* Should Have Taxes Of One Dollar And Fifty Cents
-* Should Calculate Total At Twenty One Fifty
-* Should Calculate Pre Tax Total At Twenty Dollars
+## When order has luxury product priced at ten dollars and nonluxury product priced at ten dollars in state with luxury tax and tax rate of five percent
+* Should have taxes of one dollar and fifty cents
+* Should calculate total at twenty one fifty
+* Should calculate pretax total at twenty dollars
 
-## When Order Is Millary In State With No Taxes For Millitary
-* Should Charge No Taxes
+## When order is millary in state with no taxes for millitary
+* Should charge no taxes
 
-## When Order Is Non Millary In State With No Taxes For Millitary
-* Should Charge Taxes
+## When order is nonmillary in state with no taxes for millitary
+* Should charge taxes
 
-## When Taxes Calculate To Fraction Of Penny
-* Should Be Rounded To Nearest Penny
+## When taxes calculate to fraction of penny
+* Should be rounded to nearest penny
 
 
 <style type="text/css">
-body { font-family: Arial, Helvetica, Sans-serif; font-size: 10pt; padding: 2em; }
+body { font-family: Arial, Helvetica, Sans-serif; font-size: 12pt; padding: 2em; }
 th, td { margin-right: 12px; padding-right: 12px; }
 dt { font-weight: bold; float: left; clear: left; width: 16em; background-color: #eee; padding: 3px 6px 3px 6px; margin-right: 6px; text-align: right; }
 dd { padding: 3px; }
